@@ -46,11 +46,11 @@
     <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 5l7 7-7 7"/></symbol>
     <symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></symbol>
     <symbol id="i-x" viewBox="0 0 24 24"><path d="M18 6 6 18M6 6l12 12"/></symbol>
+    <symbol id="i-playc" viewBox="0 0 24 24"><path fill="currentColor" stroke="none" d="M8 5.5v13a1 1 0 0 0 1.5.86l10.5-6.5a1 1 0 0 0 0-1.72L9.5 4.64A1 1 0 0 0 8 5.5z"/></symbol>
     <symbol id="cloud" viewBox="0 0 200 80"><path fill="#fff" d="M30 70a24 24 0 0 1-2-48 32 32 0 0 1 60-12 26 26 0 0 1 44 10 22 22 0 0 1 38 22 18 18 0 0 1-4 28z"/></symbol>
   </defs>
 </svg>
 
-<div class="progress" aria-hidden="true"></div>
 <a class="skip" href="#main">Saltar al contenido</a>
 
 <header class="top">
@@ -81,30 +81,23 @@
 <main id="main">
   <!-- ============ Hero ============ -->
   <section class="hero" aria-labelledby="t-hero">
-    <div class="sun" aria-hidden="true"></div>
-    <svg class="cloud c1" aria-hidden="true"><use href="#cloud"/></svg>
-    <svg class="cloud c2" aria-hidden="true"><use href="#cloud"/></svg>
-    <svg class="cloud c3" aria-hidden="true"><use href="#cloud"/></svg>
-    <div class="layers" aria-hidden="true">
-      <svg class="layer l1" data-speed="0.38" viewBox="0 0 1440 560" preserveAspectRatio="xMidYMax slice"><path fill="#A7C0CE" d="M0 330 L130 270 L230 300 L350 220 L450 262 L560 190 L640 228 L700 140 L735 118 L770 140 L840 216 L940 180 L1040 240 L1150 186 L1260 246 L1360 200 L1440 226 V560 H0Z"/><path fill="#F4F8FA" d="M700 140 L735 118 L770 140 L758 150 L744 142 L730 154 L716 144Z"/></svg>
-      <svg class="layer l2" data-speed="0.26" viewBox="0 0 1440 560" preserveAspectRatio="xMidYMax slice"><path fill="#6F9C86" d="M0 360 C120 320 220 340 320 300 C420 262 500 316 600 296 C700 276 770 330 870 310 C980 288 1060 250 1160 280 C1260 310 1340 268 1440 286 V560 H0Z"/></svg>
-      <svg class="layer l3" data-speed="0.14" viewBox="0 0 1440 560" preserveAspectRatio="xMidYMax slice"><path fill="#3E7B34" d="M0 410 C140 370 250 400 370 378 C490 356 570 394 690 382 C830 368 910 340 1050 362 C1170 382 1290 352 1440 370 V560 H0Z"/>
-        <g fill="none" stroke="#2F6428" stroke-linecap="round"><g transform="translate(1094 270) scale(1)"><path d="M0 0 C1 40 -2 80 0 100" stroke-width="4.5"/><path d="M0 0 q-16 -12 -34 2 M0 0 q-12 -18 -28 -12 M0 0 q16 -12 34 2 M0 0 q12 -18 28 -12 M0 0 q-3 -16 -12 -24 M0 0 q3 -16 12 -24 M0 0 q-20 -2 -30 14 M0 0 q20 -2 30 14" stroke-width="3"/></g><g transform="translate(1152 296) scale(0.8)"><path d="M0 0 C1 40 -2 80 0 80" stroke-width="4.5"/><path d="M0 0 q-16 -12 -34 2 M0 0 q-12 -18 -28 -12 M0 0 q16 -12 34 2 M0 0 q12 -18 28 -12 M0 0 q-3 -16 -12 -24 M0 0 q3 -16 12 -24 M0 0 q-20 -2 -30 14 M0 0 q20 -2 30 14" stroke-width="3"/></g><g transform="translate(302 302) scale(0.85)"><path d="M0 0 C1 40 -2 80 0 84" stroke-width="4.5"/><path d="M0 0 q-16 -12 -34 2 M0 0 q-12 -18 -28 -12 M0 0 q16 -12 34 2 M0 0 q12 -18 28 -12 M0 0 q-3 -16 -12 -24 M0 0 q3 -16 12 -24 M0 0 q-20 -2 -30 14 M0 0 q20 -2 30 14" stroke-width="3"/></g></g></svg>
-      <svg class="layer l4" data-speed="0" viewBox="0 0 1440 560" preserveAspectRatio="xMidYMax slice"><path fill="#12331A" d="M0 470 C180 440 320 462 480 450 C640 438 760 466 920 456 C1080 446 1240 470 1440 454 V560 H0Z"/></svg>
-    </div>
+    <picture class="hero-bg">
+      <source media="(max-width: 700px)" srcset="assets/img/hero-moto-m.webp">
+      <img src="assets/img/hero-moto.webp" srcset="assets/img/hero-moto-960.webp 960w, assets/img/hero-moto.webp 1280w" sizes="130vw" width="1280" height="960" fetchpriority="high" alt="Victor Hugo Molano junto a su moto en un mirador de las montañas del Cauca">
+    </picture>
     <div class="wrap">
       <div class="intro">
         <img class="logo-big" src="assets/img/logo.webp" width="160" height="160" alt="Logo de Culturalmente">
-        <h1 id="t-hero" class="display"><span class="w">Cultural</span><span class="w">mente</span></h1>
+        <h1 id="t-hero" class="display">Culturalmente</h1>
         <p class="pillars"><span>Cultura</span><span>Naturaleza</span><span>Turismo</span><span>Gastronomía</span></p>
         <p class="lead">Historias del Cauca y de Colombia contadas con imágenes: sus pueblos, sus paisajes, su gente y sus sabores.</p>
         <div class="cta">
-          <a class="btn btn-dark" href="#reels">Ver los reels <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a>
-          <a class="btn btn-ghost" href="#contacto">Trabajemos juntos</a>
+          <a class="btn btn-lime" href="#reels">Ver los reels <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+          <a class="btn btn-line" href="#contacto">Trabajemos juntos</a>
         </div>
       </div>
     </div>
-    <a class="scroll-cue" href="#historias" aria-label="Bajar a historias"><i></i>Explora</a>
+    <p class="hero-credit"><svg class="icon" aria-hidden="true"><use href="#i-pin"/></svg>Victor Hugo Molano · Cauca, Colombia</p>
   </section>
 
   <!-- ============ Historias ============ -->
@@ -121,9 +114,9 @@
       </div>
 
       <div class="stats">
-        <div class="stat reveal" style="--i:0"><b data-to="116" data-suffix=" mil">116 mil</b><span>seguidores en Facebook</span></div>
-        <div class="stat reveal" style="--i:1"><b data-to="2.6" data-dec="1" data-suffix=" mill.">2,6 mill.</b><span>vistas en un solo reel</span></div>
-        <div class="stat reveal" style="--i:2"><b data-to="197595">197.595</b><span>vistas en «El mural de la salud»</span></div>
+        <div class="stat reveal" style="--i:0"><b>116 mil</b><span>seguidores en Facebook</span></div>
+        <div class="stat reveal" style="--i:1"><b>2,6 mill.</b><span>vistas en un solo reel</span></div>
+        <div class="stat reveal" style="--i:2"><b>197 mil</b><span>vistas en «El mural de la salud»</span></div>
       </div>
 
       <div class="sec-head reveal">
@@ -131,8 +124,8 @@
         <h2 class="display" style="color:#fff">Cuatro caminos, un mismo territorio</h2>
       </div>
       <ul class="topics">
-        <li class="topic reveal" style="--i:0"><img src="assets/img/popayan-mural.webp" width="187" height="182" loading="lazy" alt="Mural de una mujer indígena en una calle de Popayán"><span class="num">01</span><div class="tx"><h3>Cultura</h3><p>Tradiciones, arte, historia y personajes que nos hacen quienes somos.</p></div></li>
-        <li class="topic reveal" style="--i:1"><img src="assets/img/reel-volcan.webp" width="188" height="280" loading="lazy" alt="Volcán nevado entre las nubes visto desde el aire"><span class="num">02</span><div class="tx"><h3>Naturaleza</h3><p>Volcanes, páramos, ríos y paisajes que vale la pena cuidar.</p></div></li>
+        <li class="topic reveal" style="--i:0"><img src="assets/img/fb-mural-salud.webp" width="360" height="640" loading="lazy" alt="El mural de la salud en el Cauca, hecho con millones de piezas de vidrio"><span class="num">01</span><div class="tx"><h3>Cultura</h3><p>Tradiciones, arte, historia y personajes que nos hacen quienes somos.</p></div></li>
+        <li class="topic reveal" style="--i:1"><img src="assets/img/fb-volcan.webp" width="360" height="640" loading="lazy" alt="Volcán nevado entre las nubes visto desde el aire"><span class="num">02</span><div class="tx"><h3>Naturaleza</h3><p>Volcanes, páramos, ríos y paisajes que vale la pena cuidar.</p></div></li>
         <li class="topic reveal" style="--i:2"><img src="assets/img/reel-la-vega.webp" width="188" height="280" loading="lazy" alt="Iglesia blanca del municipio de La Vega, Cauca, entre montañas"><span class="num">03</span><div class="tx"><h3>Turismo</h3><p>Pueblos y rincones del Cauca para visitar al menos una vez.</p></div></li>
         <li class="topic reveal" style="--i:3"><img src="assets/img/sancocho.webp" width="572" height="430" loading="lazy" alt="Plato de sancocho caucano servido en un plato decorado"><span class="num">04</span><div class="tx"><h3>Gastronomía</h3><p>Almuerzos con sazón, recetas de casa y sabores de nuestras raíces.</p></div></li>
       </ul>
@@ -145,51 +138,76 @@
       <div class="sec-head center reveal">
         <span class="kicker">Reels</span>
         <h2 id="t-reels" class="display">Recorriendo el Cauca, un reel a la vez</h2>
-        <p>Puentes, volcanes, pueblos, murales y sabores que miles de personas ya han visto.</p>
-      </div>
-    </div>
-    <div class="rows" role="region" aria-label="Galería de reels de Culturalmente">
-      <div class="rrow">
-        <div class="reel hot"><img src="assets/img/reel-volcan.webp" width="188" height="280" loading="lazy" alt="Reel: volcán nevado entre las nubes"><span class="views"><svg class="icon" aria-hidden="true"><use href="#i-eye"/></svg>2,6 mill.</span></div>
-        <div class="reel hot"><img src="assets/img/reel-mural-salud.webp" width="188" height="280" loading="lazy" alt="Reel: El mural de la salud en el Cauca"><span class="views"><svg class="icon" aria-hidden="true"><use href="#i-eye"/></svg>197.595</span></div>
-        <div class="reel"><img src="assets/img/reel-la-vega.webp" width="188" height="280" loading="lazy" alt="Reel: La Vega, Cauca"><span class="views"><svg class="icon" aria-hidden="true"><use href="#i-eye"/></svg>31.505</span></div>
-        <div class="reel"><img src="assets/img/reel-popayan-blanca.webp" width="188" height="280" loading="lazy" alt="Reel: Por qué Popayán es blanca"><span class="views"><svg class="icon" aria-hidden="true"><use href="#i-eye"/></svg>26.655</span></div>
-        <div class="reel"><img src="assets/img/reel-mesa-larga.webp" width="188" height="280" loading="lazy" alt="Reel: Mesa Larga, tradición payanesa"><span class="views"><svg class="icon" aria-hidden="true"><use href="#i-eye"/></svg>14.549</span></div>
-        <div class="reel"><img src="assets/img/reel-teatro-valencia.webp" width="188" height="280" loading="lazy" alt="Reel: Teatro Guillermo Valencia en Popayán"><span class="views"><svg class="icon" aria-hidden="true"><use href="#i-eye"/></svg>11.507</span></div>
-        <div class="reel"><img src="assets/img/reel-chorrito-pamba.webp" width="188" height="280" loading="lazy" alt="Reel: Chorrito de la Pamba"><span class="views"><svg class="icon" aria-hidden="true"><use href="#i-eye"/></svg>10.374</span></div>
-        <div class="reel"><img src="assets/img/reel-morro-tulcan.webp" width="188" height="280" loading="lazy" alt="Reel: El Morro de Tulcán"></div>
-        <!-- duplicate for seamless loop -->
-        <div class="reel hot" aria-hidden="true"><img src="assets/img/reel-volcan.webp" width="188" height="280" loading="lazy" alt=""><span class="views"><svg class="icon"><use href="#i-eye"/></svg>2,6 mill.</span></div>
-        <div class="reel hot" aria-hidden="true"><img src="assets/img/reel-mural-salud.webp" width="188" height="280" loading="lazy" alt=""><span class="views"><svg class="icon"><use href="#i-eye"/></svg>197.595</span></div>
-        <div class="reel" aria-hidden="true"><img src="assets/img/reel-la-vega.webp" width="188" height="280" loading="lazy" alt=""><span class="views"><svg class="icon"><use href="#i-eye"/></svg>31.505</span></div>
-        <div class="reel" aria-hidden="true"><img src="assets/img/reel-popayan-blanca.webp" width="188" height="280" loading="lazy" alt=""><span class="views"><svg class="icon"><use href="#i-eye"/></svg>26.655</span></div>
-        <div class="reel" aria-hidden="true"><img src="assets/img/reel-mesa-larga.webp" width="188" height="280" loading="lazy" alt=""><span class="views"><svg class="icon"><use href="#i-eye"/></svg>14.549</span></div>
-        <div class="reel" aria-hidden="true"><img src="assets/img/reel-teatro-valencia.webp" width="188" height="280" loading="lazy" alt=""><span class="views"><svg class="icon"><use href="#i-eye"/></svg>11.507</span></div>
-        <div class="reel" aria-hidden="true"><img src="assets/img/reel-chorrito-pamba.webp" width="188" height="280" loading="lazy" alt=""><span class="views"><svg class="icon"><use href="#i-eye"/></svg>10.374</span></div>
-        <div class="reel" aria-hidden="true"><img src="assets/img/reel-morro-tulcan.webp" width="188" height="280" loading="lazy" alt=""></div>
-      </div>
-      <div class="rrow r2">
-        <div class="reel"><img src="assets/img/reel-dibujos-lapiz.webp" width="188" height="280" loading="lazy" alt="Reel: No son fotografías, son dibujos a lápiz"><span class="views"><svg class="icon" aria-hidden="true"><use href="#i-eye"/></svg>9.108</span></div>
-        <div class="reel"><img src="assets/img/reel-purace.webp" width="188" height="280" loading="lazy" alt="Reel: Puracé, Cauca"><span class="views"><svg class="icon" aria-hidden="true"><use href="#i-eye"/></svg>7.160</span></div>
-        <div class="reel"><img src="assets/img/reel-humilladero.webp" width="188" height="280" loading="lazy" alt="Reel: El Puente del Humilladero"><span class="views"><svg class="icon" aria-hidden="true"><use href="#i-eye"/></svg>2.659</span></div>
-        <div class="reel"><img src="assets/img/reel-silvia.webp" width="188" height="280" loading="lazy" alt="Reel: Silvia, Cauca, la Suiza de América"></div>
-        <div class="reel"><img src="assets/img/reel-top5-cauca.webp" width="188" height="280" loading="lazy" alt="Reel: Top 5 lugares que debes visitar en el Cauca"></div>
-        <div class="reel"><img src="assets/img/reel-aguardiente.webp" width="188" height="280" loading="lazy" alt="Reel: Del ayer al hoy, la historia del aguardiente caucano"></div>
-        <div class="reel"><img src="assets/img/reel-macizo.webp" width="188" height="280" loading="lazy" alt="Reel: El macizo se está quemando"></div>
-        <div class="reel"><img src="assets/img/reel-mil-pesos.webp" width="188" height="280" loading="lazy" alt="Reel: Qué podías comprar con mil pesos décadas atrás"></div>
-        <div class="reel" aria-hidden="true"><img src="assets/img/reel-dibujos-lapiz.webp" width="188" height="280" loading="lazy" alt=""><span class="views"><svg class="icon"><use href="#i-eye"/></svg>9.108</span></div>
-        <div class="reel" aria-hidden="true"><img src="assets/img/reel-purace.webp" width="188" height="280" loading="lazy" alt=""><span class="views"><svg class="icon"><use href="#i-eye"/></svg>7.160</span></div>
-        <div class="reel" aria-hidden="true"><img src="assets/img/reel-humilladero.webp" width="188" height="280" loading="lazy" alt=""><span class="views"><svg class="icon"><use href="#i-eye"/></svg>2.659</span></div>
-        <div class="reel" aria-hidden="true"><img src="assets/img/reel-silvia.webp" width="188" height="280" loading="lazy" alt=""></div>
-        <div class="reel" aria-hidden="true"><img src="assets/img/reel-top5-cauca.webp" width="188" height="280" loading="lazy" alt=""></div>
-        <div class="reel" aria-hidden="true"><img src="assets/img/reel-aguardiente.webp" width="188" height="280" loading="lazy" alt=""></div>
-        <div class="reel" aria-hidden="true"><img src="assets/img/reel-macizo.webp" width="188" height="280" loading="lazy" alt=""></div>
-        <div class="reel" aria-hidden="true"><img src="assets/img/reel-mil-pesos.webp" width="188" height="280" loading="lazy" alt=""></div>
+        <p>Los reels más vistos de la página. Toca cualquiera para verlo en Facebook.</p>
       </div>
     </div>
     <div class="wrap">
+      <ul class="reel-grid" aria-label="Reels de Culturalmente">
+        <li><a class="reel hot" href="https://www.facebook.com/reel/38938075612507337/" target="_blank" rel="noopener">
+          <img src="assets/img/fb-volcan.webp" width="360" height="640" loading="lazy" alt="">
+          <span class="play" aria-hidden="true"><svg class="icon"><use href="#i-playc"/></svg></span>
+          <span class="views"><svg class="icon" aria-hidden="true"><use href="#i-eye"/></svg>2,6 mill.<span class="sr"> reproducciones</span></span>
+          <span class="rt">Volcán nevado entre las nubes</span>
+        </a></li>
+        <li><a class="reel hot" href="https://www.facebook.com/reel/1841050747035279/" target="_blank" rel="noopener">
+          <img src="assets/img/fb-mural-salud.webp" width="360" height="640" loading="lazy" alt="">
+          <span class="play" aria-hidden="true"><svg class="icon"><use href="#i-playc"/></svg></span>
+          <span class="views"><svg class="icon" aria-hidden="true"><use href="#i-eye"/></svg>197 mil<span class="sr"> reproducciones</span></span>
+          <span class="rt">El mural de la salud en el Cauca</span>
+        </a></li>
+        <li><a class="reel" href="https://www.facebook.com/reel/2400326064127006/" target="_blank" rel="noopener">
+          <img src="assets/img/fb-mesa-larga.webp" width="360" height="640" loading="lazy" alt="">
+          <span class="play" aria-hidden="true"><svg class="icon"><use href="#i-playc"/></svg></span>
+          <span class="views"><svg class="icon" aria-hidden="true"><use href="#i-eye"/></svg>14 mil<span class="sr"> reproducciones</span></span>
+          <span class="rt">Mesa Larga, tradición payanesa</span>
+        </a></li>
+        <li><a class="reel" href="https://www.facebook.com/reel/1799681074592657/" target="_blank" rel="noopener">
+          <img src="assets/img/fb-teatro-valencia.webp" width="360" height="640" loading="lazy" alt="">
+          <span class="play" aria-hidden="true"><svg class="icon"><use href="#i-playc"/></svg></span>
+          <span class="views"><svg class="icon" aria-hidden="true"><use href="#i-eye"/></svg>11 mil<span class="sr"> reproducciones</span></span>
+          <span class="rt">Teatro Guillermo Valencia, Popayán</span>
+        </a></li>
+        <li><a class="reel" href="https://www.facebook.com/reel/937530549153397/" target="_blank" rel="noopener">
+          <img src="assets/img/fb-mil-pesos.webp" width="360" height="640" loading="lazy" alt="">
+          <span class="play" aria-hidden="true"><svg class="icon"><use href="#i-playc"/></svg></span>
+          <span class="views"><svg class="icon" aria-hidden="true"><use href="#i-eye"/></svg>11 mil<span class="sr"> reproducciones</span></span>
+          <span class="rt">Qué podías comprar con mil pesos</span>
+        </a></li>
+        <li><a class="reel" href="https://www.facebook.com/reel/1167488202272686/" target="_blank" rel="noopener">
+          <img src="assets/img/fb-dibujos-lapiz.webp" width="360" height="640" loading="lazy" alt="">
+          <span class="play" aria-hidden="true"><svg class="icon"><use href="#i-playc"/></svg></span>
+          <span class="views"><svg class="icon" aria-hidden="true"><use href="#i-eye"/></svg>9,1 mil<span class="sr"> reproducciones</span></span>
+          <span class="rt">No son fotografías, son dibujos a lápiz</span>
+        </a></li>
+        <li><a class="reel" href="https://www.facebook.com/reel/4288654011379118/" target="_blank" rel="noopener">
+          <img src="assets/img/fb-aguardiente.webp" width="360" height="640" loading="lazy" alt="">
+          <span class="play" aria-hidden="true"><svg class="icon"><use href="#i-playc"/></svg></span>
+          <span class="views"><svg class="icon" aria-hidden="true"><use href="#i-eye"/></svg>4,2 mil<span class="sr"> reproducciones</span></span>
+          <span class="rt">Del ayer al hoy: la historia del aguardiente caucano</span>
+        </a></li>
+        <li><a class="reel" href="https://www.facebook.com/reel/2256446958266643/" target="_blank" rel="noopener">
+          <img src="assets/img/fb-humilladero.webp" width="360" height="640" loading="lazy" alt="">
+          <span class="play" aria-hidden="true"><svg class="icon"><use href="#i-playc"/></svg></span>
+          <span class="views"><svg class="icon" aria-hidden="true"><use href="#i-eye"/></svg>2,8 mil<span class="sr"> reproducciones</span></span>
+          <span class="rt">El Puente del Humilladero</span>
+        </a></li>
+        <li><a class="reel" href="https://www.facebook.com/reel/1785541696010604/" target="_blank" rel="noopener">
+          <img src="assets/img/fb-perrito.webp" width="360" height="640" loading="lazy" alt="">
+          <span class="play" aria-hidden="true"><svg class="icon"><use href="#i-playc"/></svg></span>
+          <span class="views"><svg class="icon" aria-hidden="true"><use href="#i-eye"/></svg>2,4 mil<span class="sr"> reproducciones</span></span>
+          <span class="rt">De nada te sirve creer en Dios si eres malo con sus creaciones</span>
+        </a></li>
+        <li><a class="reel" href="https://www.facebook.com/reel/1303349615199392/" target="_blank" rel="noopener">
+          <img src="assets/img/fb-top5-cauca.webp" width="360" height="640" loading="lazy" alt="">
+          <span class="play" aria-hidden="true"><svg class="icon"><use href="#i-playc"/></svg></span>
+          <span class="views"><svg class="icon" aria-hidden="true"><use href="#i-eye"/></svg>2,2 mil<span class="sr"> reproducciones</span></span>
+          <span class="rt">Top 5 lugares que debes visitar en el Cauca</span>
+        </a></li>
+      </ul>
+    </div>
+    <div class="wrap">
       <div class="after">
-        <a class="btn btn-lime" href="https://www.facebook.com/search/top?q=Culturalmente" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-fb"/></svg>Ver más en Facebook</a>
+        <a class="btn btn-lime" href="https://www.facebook.com/Culturalmente98/reels/" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-fb"/></svg>Ver todos los reels en Facebook</a>
       </div>
     </div>
   </section>
@@ -240,26 +258,7 @@
     <div class="wrap v-grid">
       <div class="portrait reveal">
         <div class="frame">
-          <!-- FOTO: cuando esté lista, reemplazar el SVG por:
-               <img src="assets/img/victor.webp" width="800" height="1000" alt="Victor Hugo Molano mirando al horizonte"> -->
-          <svg viewBox="0 0 400 500" role="img" aria-label="Ilustración de una persona en la cima de una montaña mirando al horizonte">
-            <defs>
-              <linearGradient id="vs" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#F7B267"/><stop offset=".55" stop-color="#FBDCA6"/><stop offset="1" stop-color="#CFE8F5"/></linearGradient>
-            </defs>
-            <rect width="400" height="500" fill="url(#vs)"/>
-            <circle cx="250" cy="250" r="56" fill="#FFF3D1" opacity=".9"/>
-            <path d="M0 300 L60 262 L120 286 L190 230 L250 270 L310 236 L400 280 V500 H0Z" fill="#9DB4BE"/>
-            <path d="M0 340 C70 310 130 330 200 306 C270 284 330 320 400 300 V500 H0Z" fill="#5E8C6E"/>
-            <path d="M0 400 C80 372 150 390 230 370 C300 352 350 380 400 366 V500 H0Z" fill="#2F6428"/>
-            <path d="M60 500 L130 404 L170 392 L210 404 L280 500Z" fill="#12331A"/>
-            <g fill="#12331A">
-              <circle cx="170" cy="314" r="8.5"/>
-              <path d="M157 326 q13-5 26 0 l-1 37 h-24z"/>
-              <path d="M159 361 h9 l-1 34 h-7z M172 361 h9 l-1 34 h-7z"/>
-              <path d="M157 328 l-6 30 h5 l6-26z M183 328 l6 30 h-5 l-6-26z"/>
-              <path d="M178 327 l7 -2 l2 6 l-7 3z"/>
-            </g>
-          </svg>
+          <img src="assets/img/victor.webp" width="800" height="1000" loading="lazy" alt="Victor Hugo Molano, fotógrafo y diseñador, en una calle con jardín">
         </div>
         <span class="tape">Fotógrafo · Diseñador</span>
         <div class="badge"><img src="assets/img/logo.webp" width="160" height="160" alt=""><div><b>116 mil</b><span>seguidores</span></div></div>
@@ -337,7 +336,7 @@
           <div class="row">
             <a class="btn btn-wa" href="https://wa.me/573041287841?text=Hola%20Victor%20Hugo%2C%20te%20escribo%20desde%20la%20p%C3%A1gina%20de%20Culturalmente." target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-wa"/></svg>WhatsApp</a>
             <a class="btn btn-line" href="tel:+573041287841"><svg class="icon" aria-hidden="true"><use href="#i-phone"/></svg>Llamar</a>
-            <a class="btn btn-line" href="https://www.facebook.com/search/top?q=Culturalmente" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-fb"/></svg>Facebook</a>
+            <a class="btn btn-line" href="https://www.facebook.com/Culturalmente98" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-fb"/></svg>Facebook</a>
           </div>
         </div>
         <div class="right">
@@ -376,7 +375,7 @@
     </div>
     <div>
       <p class="fh">Contacto</p>
-      <nav aria-label="Contacto"><a href="https://wa.me/573041287841" target="_blank" rel="noopener">WhatsApp · 304 128 7841</a><a href="tel:+573041287841">Llamar</a><a href="https://www.facebook.com/search/top?q=Culturalmente" target="_blank" rel="noopener">Facebook</a></nav>
+      <nav aria-label="Contacto"><a href="https://wa.me/573041287841" target="_blank" rel="noopener">WhatsApp · 304 128 7841</a><a href="tel:+573041287841">Llamar</a><a href="https://www.facebook.com/Culturalmente98" target="_blank" rel="noopener">Facebook</a></nav>
     </div>
     <p class="copy">© <span id="y">2026</span> Culturalmente · Victor Hugo Molano. Todos los derechos reservados.</p>
   </div>
