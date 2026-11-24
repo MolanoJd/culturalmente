@@ -415,3 +415,17 @@ footer .copy { grid-column: 1 / -1; padding-top: 22px; margin-top: 10px; border-
   .pillars { font-size: .9rem; letter-spacing: .1em; gap: 4px 10px; }
   .pillars span { gap: 10px; }
 }
+
+/* v5: stacked hero for any portrait screen (phones, tablets, phone 'desktop site' mode) */
+@media (max-width: 700px), (max-aspect-ratio: 1/1) {
+  .hero { --ph: min(62svh, 125vw); min-height: 0; }
+  .hero-bg { left: 0; right: 0; width: 100%; height: var(--ph); bottom: auto; }
+  .hero-bg img { object-position: 58% 22%; }
+  .hero::after { background: linear-gradient(180deg, rgba(11, 31, 14, .55) 0%, rgba(11, 31, 14, 0) 14%, rgba(11, 31, 14, 0) 34%, rgba(11, 31, 14, .55) calc(var(--ph) * .78), #0B1F0E var(--ph), #0B1F0E 100%); }
+  .hero .wrap { padding-top: calc(var(--ph) * .74); padding-bottom: 64px; }
+  .hero .logo-big { display: none; }
+}
+@media (min-width: 701px) and (max-aspect-ratio: 1/1) {
+  .hero .intro { max-width: 760px; }
+  .hero h1 { font-size: clamp(4rem, 11vw, 7rem); }
+}
